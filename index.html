@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>twoogood.com.au-clone</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   </head>
   <body id="body">
     <div class="logo  fixed top-1 z-100">
@@ -62,22 +63,41 @@
 
       <!-- image section  -->
       <div class="grid lg:grid-cols-3 gap-5 px-3.5 py-5">
-        <div class="relative border flex justify-center items-center shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-          <img class="w-full h-full" src="public/card-image-1.avif" alt="">
-          <div class="absolute flex bg-[#DCC0B4] gap-10 px-7 py-3 rounded-full">
+
+        <!-- card-1 -->
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-1.avif" alt="">
+          <div data-scroll data-scroll-speed="-3" class="absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full">
             <img width="10" src="public/circle.svg" alt="">
             <h3 class="font-medium text-[14px]">SHOP</h3>
             <h3 class="font-bold text-[14px]">PANTRY</h3>
             <img width="15" src="public/angle-small-right.svg" alt="">
           </div>
         </div>
-        <div class="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-          <img class="w-full h-full" src="public/card-image-2.avif" alt="">
+
+        <!-- card-2 -->
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-2.avif" alt="">
+          <div data-scroll data-scroll-speed="-3" class="absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7  py-3.5 cursor-pointer rounded-full">
+            <img width="10" src="public/circle.svg" alt="">
+            <h3 class="font-medium text-[14px]">SHOP</h3>
+            <h3 class="font-bold text-[14px]">PANTRY</h3>
+            <img width="15" src="public/angle-small-right.svg" alt="">
+          </div>
         </div>
-        <div class="shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-          <img class="w-full h-full" src="public/card-image-3.avif" alt="">
+
+        <!-- card-3 -->
+        <div class="relative overflow-hidden flex justify-center items-center">
+          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-3.avif" alt="">
+          <div data-scroll data-scroll-speed="-3"  class="absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7  py-3.5 cursor-pointer rounded-full">
+            <img width="10" src="public/circle.svg" alt="">
+            <h3 class="font-medium text-[14px]">SHOP</h3>
+            <h3 class="font-bold text-[14px]">PANTRY</h3>
+            <img width="15" src="public/angle-small-right.svg" alt="">
+          </div>
         </div>
       </div>
+      <div class="h-screen">fv</div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
