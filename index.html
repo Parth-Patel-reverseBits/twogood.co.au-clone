@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   </head>
-  <body id="body">
+  <body id="body" class="bg-[#F7F7F7]">
     <div class="logo  fixed top-1 z-100">
       <h2 class="text-4xl/7 font-extrabold tracking-tighter">TWO<br>GOOD<br>CO.</h2>
     </div>
@@ -100,7 +100,7 @@
       </div>
 
       <!-- next text section  -->
-      <div class="lg:flex justify-between p-6">
+      <div  class="lg:flex justify-between p-6 mb-30">
         <h2 class="px-6 text-[32px] text-center mb-10 leading-8 font-[900] uppercase lg:text-[56px] lg:px-0 lg:text-left lg:leading-14">We believe in people, until they believe in themselves again.</h2>
         <div>
           <p class="text-center text-base font-medium mb-10 px-5 lg:text-left lg:px-30">Everything we do is designed to rebuild self worth and independence, in order to break free from the cycle of disadvantage.
@@ -113,6 +113,41 @@
           </div>
         </div>
       </div>
+
+      <!-- product-card-section with cursor animation  -->
+      <!-- moving cursor  -->
+      <div id="cursor" class="scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
+
+      <!-- all product cards  -->
+      <div class="h-[10000px] flex justify-evenly p-6">
+        <div class="">
+          <div id="product-card-1" class="cursor-pointer max-w-[612px] lg:mb-20">
+            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-1.avif" alt="">
+            <p class="text-center text-[0.75rem] font-medium">TWO HUGS BAR N' BEAR SET</p>
+            <span class="block text-center text-[0.625rem]">$50</span>
+          </div>
+          <div id="product-card-4" class="cursor-pointer max-w-[612px]">
+            <img  class="w-full h-full object-contain lg:mb-10" src="public/product-image-3.avif" alt="">
+            <p class="text-center text-[0.75rem] font-medium">CHANGE THE COURSE COOKBOOK</p>
+            <span class="block text-center text-[0.625rem]">$45</span>
+          </div>
+        </div>
+
+
+        <div>
+          <div id="product-card-2" class="cursor-pointer max-w-[612px] lg:mb-20">
+            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-2.avif" alt="">
+            <p class="text-center text-[0.75rem] font-medium">ALEMAIS COOK IN COLOUR APRON</p>
+            <span class="block text-center text-[0.625rem]">$190</span>
+          </div>
+          <div id="product-card-3" class="cursor-pointer max-w-[612px]">
+            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-4.avif" alt="">
+            <p class="text-center text-[0.75rem] font-medium">Strawberry Gum Leaf, Coriander, Basil + Mint Candle</p>
+            <span class="block text-center text-[0.625rem]">$59</span>
+          </div>
+        </div>
+      </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
