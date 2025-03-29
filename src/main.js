@@ -11,6 +11,8 @@ document.addEventListener("mousemove", (event) =>{
     gsap.to("#cursor", {
         x: event.x,
         y: event.y,
+        // scale: 1,
+        // backgroundColor: "red"
     })
 })
 

@@ -10,8 +10,10 @@
   </head>
   <body id="body" class="bg-[#F7F7F7]">
     <!-- moving cursor  -->
-    <div id="cursor" class="hidden lg:block scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
-
+    <div id="cursor" class="scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
+      
+    
+   
     <div class="logo  fixed top-1 z-100">
       <h2 class="text-4xl/7 font-extrabold tracking-tighter">TWO<br>GOOD<br>CO.</h2>
     </div>
@@ -28,7 +30,9 @@
           <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="">
         </div>
       </div>
-    </nav>
+    </nav>  
+
+    
     <main id="main">
       <!-- header section  -->
       <header class="px-6 mb-6 mt-50 lg:p-6 lg:mt-30 lg:mb-7">
@@ -118,7 +122,6 @@
       </div>
 
       <!-- product-card-section with cursor animation  -->
-      
       <!-- all product cards  -->
       <div class="flex justify-evenly p-6">
         <div class="">
@@ -155,7 +158,7 @@
 
       <!-- our impact section  -->
        <div class="lg:flex lg:flex-row-reverse lg:justify-start">
-        <div class="lg:w-[70%] grid grid-cols-2 mx-4 mb-2.5 overflow-hidden">
+        <div class="lg:w-[70%] grid grid-cols-2 mx-2 mb-2.5 overflow-hidden">
           <div class="flex justify-center h-[500px] lg:h-full">
             <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Christina-Maria-Jes-Lindsay-9143.avif" alt="">
           </div>
@@ -163,7 +166,7 @@
             <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Patricia-Work-Work-Good-Stories-Two-Good-Co.avif" alt="">
           </div>
         </div>
-        <div class="w-[30%] pr-20">
+        <div class="lg:w-[30%] pr-20">
           <h2 class="text-2xl leading-0.9 font-extrabold mx-4 mb-4">OUR IMPACT.</h2>
           <p class="mb-8 mx-4">The thing is, we don't save anyone.</p>
           <p class="mb-8 mx-4">What we do is provide a safe space for women to change the course of their own lives.</p>
@@ -173,10 +176,62 @@
           </div>
         </div>
        </div>
-
-       <div class="mt-1000"></div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <footer>
+      <div class="mx-4 mb-10">
+        <img class="w-20 h-20" src="public/twogoodlogo-dark-300x300.svg" alt="">
+      </div>
+      <div class="grid grid-cols-2 lg:flex lg:justify-between mx-4 mb-10">
+        <div class="lg:w-[25%]">
+          <span class="block mb-10 text-[10px] opacity-[0.5]">CONNECT WITH US</span>
+          <ul>
+            <li>Facbook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Linkdin</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+        <div class="hidden mb-10 lg:flex flex-col items-center lg:w-[50%]">
+          <img class="w-55 h-55 mb-25" src="public/twogoodlogo-dark-300x300.svg" alt="">
+          <ul class="flex justify-evenly w-full">
+            <li class="text-[12px] opacity-[0.5]">© TWO GOOD CO. 2025</li>
+            <li class="text-[12px] opacity-[0.5]">TERMS OF USE</li>
+            <li class="text-[12px] opacity-[0.5]">PRIVACY POLICY</li>
+          </ul>        
+        </div>
+        <div class="lg:w-[25%]">
+          <span class="block mb-10 text-[10px] opacity-[0.5] lg:text-right">THE NITTY GRITIES</span>
+          <ul class="lg:text-right">
+            <li>Good Things FAQs</li>
+            <li>Good Food FAQs</li>
+            <li>Good Places</li>
+            <li>Pathways</li>
+            <li>Pathways</li>
+            <li>Careers</li>
+            <li>Wholesales</li>
+          </ul>
+        </div>
+      </div>
+      <span class="block uppercase mx-4 mb-10 text-[10px] opacity-[0.5] lg:hidden">acknowledgement of country</span>
+      <p class="mb-10 mx-4 text-[14px] leading-5 lg:text-center lg:px-45 lg:pt-[10px] lg:pb-[60px]">
+        We are proud and privileged to have our home on this land, and to be able to continue the long tradition of community coming together around food, begun thousands of years ago by First Nations peoples.
+
+        As we stand together on this unceded land, we acknowledge our First Nations people, are the original custodians of this land, and we recognise their deep connection to land, water, sky and community which continues today. 
+        
+        We pay our deep respects to community elders, past, present and emerging, for they hold the memories, the traditions, the culture and hopes of Aboriginal and Torres Strait Islander peoples.
+        
+        Always was, always will be Aboriginal land. 
+      </p>
+      <ul class="flex justify-between w-full px-4 py-4 lg:hidden">
+        <li class="text-[12px] opacity-[0.5]">© TWO GOOD CO. 2025</li>
+        <li class="text-[12px] opacity-[0.5]">TERMS OF USE</li>
+        <li class="text-[12px] opacity-[0.5]">PRIVACY POLICY</li>
+      </ul>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script type="module" src="./src/main.js"></script>
   </body>
