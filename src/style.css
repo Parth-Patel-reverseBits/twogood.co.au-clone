@@ -64,7 +64,8 @@ h2 {
 }
 
 p {
-  font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+  font-family:  Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 span {

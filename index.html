@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   </head>
   <body id="body" class="bg-[#F7F7F7]">
-      <!-- moving cursor  -->
-      <div id="cursor" class="scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
+    <!-- moving cursor  -->
+    <div id="cursor" class="hidden lg:block scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
 
     <div class="logo  fixed top-1 z-100">
       <h2 class="text-4xl/7 font-extrabold tracking-tighter">TWO<br>GOOD<br>CO.</h2>
@@ -43,7 +43,7 @@
       <!-- big image container  -->
       <div id="img-container" class="px-6 mb-30 lg:p-6 overflow-hidden w-[97%] m-auto">
         <!-- big image  -->
-        <img data-scroll data-scroll-speed="-3" class="w-full scale-[1.1]" src="https://cdn.sanity.io/images/w8f1ak3c/production/02d25b54054ee78462dfdb3bdc0b8c635f3ede8d-1108x1434.png/Screenshot%202024-12-19%20at%2010.22.47%E2%80%AFAM.png?rect=0,351,1108,735&fp-x=0.5&fp-y=0.5012253968253968&w=1024&h=556&fit=crop&crop=focalpoint&auto=format" alt="">
+        <img data-scroll data-scroll-speed="-1" class="w-full scale-[1.1]" src="https://cdn.sanity.io/images/w8f1ak3c/production/02d25b54054ee78462dfdb3bdc0b8c635f3ede8d-1108x1434.png/Screenshot%202024-12-19%20at%2010.22.47%E2%80%AFAM.png?rect=0,351,1108,735&fp-x=0.5&fp-y=0.5012253968253968&w=1024&h=556&fit=crop&crop=focalpoint&auto=format" alt="">
       </div>
 
       <!-- new section  -->
@@ -71,7 +71,7 @@
         <!-- card-1 -->
         <div class="relative overflow-hidden flex justify-center items-center">
           <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-1.avif" alt="">
-          <div data-scroll data-scroll-speed="-3" class="absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full">
+          <div data-scroll data-scroll-speed="-3" class=" absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full">
             <img width="10" src="public/circle.svg" alt="">
             <h3 class="font-medium text-[14px]">SHOP</h3>
             <h3 class="font-bold text-[14px]">PANTRY</h3>
@@ -93,7 +93,7 @@
         <!-- card-3 -->
         <div class="relative overflow-hidden flex justify-center items-center">
           <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-3.avif" alt="">
-          <div data-scroll data-scroll-speed="-3"  class="absolute flex bg-[#FFFFFF] gap-5 px-10 lg:px-7  py-3.5 cursor-pointer rounded-full">
+          <div data-scroll data-scroll-speed="-3"  class="absolute flex bg-[#FFFFFF] gap-5 px-8 lg:px-7  py-3.5 cursor-pointer rounded-full">
             <img width="10" src="public/circle.svg" alt="">
             <h3 class="font-medium text-[14px]">SHOP</h3>
             <h3 class="font-bold text-[14px]">SOAPS FOR HOPE</h3>
@@ -151,7 +151,30 @@
 
       
         <!-- slider js section  -->
-      <div class="h-screen bg-blue-700 text-white">slider js section</div>
+      <!-- <div class="h-screen bg-blue-700 text-white">slider js section</div> -->
+
+      <!-- our impact section  -->
+       <div class="lg:flex lg:flex-row-reverse lg:justify-start">
+        <div class="lg:w-[70%] grid grid-cols-2 mx-4 mb-2.5 overflow-hidden">
+          <div class="flex justify-center h-[500px] lg:h-full">
+            <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Christina-Maria-Jes-Lindsay-9143.avif" alt="">
+          </div>
+          <div class="flex justify-center h-[500px] lg:h-full">
+            <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Patricia-Work-Work-Good-Stories-Two-Good-Co.avif" alt="">
+          </div>
+        </div>
+        <div class="w-[30%] pr-20">
+          <h2 class="text-2xl leading-0.9 font-extrabold mx-4 mb-4">OUR IMPACT.</h2>
+          <p class="mb-8 mx-4">The thing is, we don't save anyone.</p>
+          <p class="mb-8 mx-4">What we do is provide a safe space for women to change the course of their own lives.</p>
+          <p class="mb-8 mx-4">After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for independence. We believe that through experiences that promote love and respect, we can spark and nurture a sense of self-worth for those on the path of healing.</p>
+          <div>
+            <p class="px-4">HERE'S HOW WE DO IT</p>
+          </div>
+        </div>
+       </div>
+
+       <div class="mt-1000"></div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
