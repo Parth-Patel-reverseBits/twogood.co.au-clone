@@ -69,6 +69,24 @@ document.getElementById("product-card-4").addEventListener("mouseout", (event) =
     })
 })
 
+const inputBox = document.getElementById('input-box');
+const defaultBtn = document.getElementById('default-btn');
+const focusBtn = document.getElementById('focus-btn');
+
+inputBox.addEventListener('focus', () => {
+  defaultBtn.classList.add('hidden');   
+  focusBtn.classList.remove('hidden');
+});
+
+inputBox.addEventListener('blur', () => {
+  defaultBtn.classList.remove('hidden');
+  focusBtn.classList.add('hidden');
+});
+
+
+
+
+
 
 
 
