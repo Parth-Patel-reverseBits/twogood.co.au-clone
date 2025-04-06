@@ -1,71 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>twoogood.com.au-clone</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body id="body" class="bg-[#F7F7F7]">
     <!-- moving cursor  -->
-    <div id="cursor" class="scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"></div>
-      
-    
-   
-    <div class="logo  fixed top-1 z-100">
-      <h2 class="text-4xl/7 font-extrabold tracking-tighter">TWO<br>GOOD<br>CO.</h2>
-    </div>
-    <nav class="flex justify-end items-center mt-10">
-      <div class="flex items-center">
-        <ul id="nav-ul" class="hidden lg:flex justify-end items-center gap-9 pe-38">
-          <li>SHOP</li>
-          <li>WHOLESALE</li>
-          <li>CATERING</li>
-          <li>DONATE</li>
-        </ul>
-        <div class="flex gap-10 mr-6 fixed end-0 bg-white z-100 py-2 px-4 rounded-full">
-          <img width="16" src="public/bars-staggered.svg" alt="" srcset="">
-          <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="">
-        </div>
-      </div>
-    </nav>  
+    <div
+      id="cursor"
+      class="scale-0 fixed w-[200px] h-[200px] bg-white rounded-full"
+    ></div>
+    <header class="body-container">
+      <nav class="w-full fixed flex justify-between ml-4 items-center">
+        <div class="p-1 h-24  overflow-hidden">
+          <h2 class="text-3xl/7 font-extrabold tracking-tighter ">
+            TWO<br />GOOD<br />CO.
+          </h2>
+          <div class="image-block">
+            <img
+            id="logo-img"
+            class="header-svg w-15 mt-2 block"
+            src="public/twogoodlogo-dark-300x300.svg"
+            alt=""
+          />
+          </div>
 
-    
+        </div>
+        <div class="flex items-center">
+          <ul
+            id="nav-ul"
+            class="hidden lg:flex justify-end items-center gap-9 pe-38"
+          >
+            <li>SHOP</li>
+            <li>WHOLESALE</li>
+            <li>CATERING</li>
+            <li>DONATE</li>
+          </ul>
+        </div>
+        <div
+          class="flex gap-10 mr-6 fixed end-0 bg-white z-100 py-2 px-4 rounded-full"
+        >
+          <img width="16" src="public/bars-staggered.svg" alt="" srcset="" />
+          <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="" />
+        </div>
+      </nav>
+    </header>
+
     <main id="main">
       <!-- header section  -->
-      <header class="px-6 mb-6 mt-50 lg:p-6 lg:mt-30 lg:mb-7">
-        <div class="overflow-hidden pb-2 lg:pb-6">
-          <h1 id="text-1" class="text-[15vw]  pb-1 leading-0  tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white">CHANGE</h1>
+      <header class="header-container px-6 mb-6 mt-50 lg:p-6 lg:mt-30 lg:mb-7">
+        <div id="big-text-div" class="relative overflow-hidden pb-2 lg:pb-6">
+          <h1
+            id="text-1"
+            class="text-[15vw] pb-1 leading-0 tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white"
+          >
+            CHANGE
+          </h1>
         </div>
         <div class="flex overflow-hidden py-0 sm:pb-5">
-          <h1 id="text-2" class="text-[15vw] leading-0 pb-2  tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white">THE</h1> 
-          <h1 id="text-3" class="text-[15vw] leading-0 pb-2 tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white">COURSE</h1>
+          <h1
+            id="text-2"
+            class="text-[15vw] leading-0 pb-2 tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white"
+          >
+            THE
+          </h1>
+          <h1
+            id="text-3"
+            class="text-[15vw] leading-0 pb-2 tracking-[-2px] lg:text-[16.50vw] font-extrabold lg:tracking-[-15px] selection:bg-black selection:text-white"
+          >
+            COURSE
+          </h1>
         </div>
       </header>
       <!-- big image container  -->
-      <div id="img-container" class="px-6 mb-30 lg:p-6 overflow-hidden w-[97%] m-auto">
+      <div
+        id="img-container"
+        class="px-6 mb-30 lg:p-6 overflow-hidden w-[97%] m-auto"
+      >
         <!-- big image  -->
-        <img data-scroll data-scroll-speed="-1" class="w-full scale-[1.1]" src="https://cdn.sanity.io/images/w8f1ak3c/production/02d25b54054ee78462dfdb3bdc0b8c635f3ede8d-1108x1434.png/Screenshot%202024-12-19%20at%2010.22.47%E2%80%AFAM.png?rect=0,351,1108,735&fp-x=0.5&fp-y=0.5012253968253968&w=1024&h=556&fit=crop&crop=focalpoint&auto=format" alt="">
+        <img
+          data-scroll
+          data-scroll-speed="-1"
+          class="w-full scale-[1.1]"
+          src="https://cdn.sanity.io/images/w8f1ak3c/production/02d25b54054ee78462dfdb3bdc0b8c635f3ede8d-1108x1434.png/Screenshot%202024-12-19%20at%2010.22.47%E2%80%AFAM.png?rect=0,351,1108,735&fp-x=0.5&fp-y=0.5012253968253968&w=1024&h=556&fit=crop&crop=focalpoint&auto=format"
+          alt=""
+        />
       </div>
 
       <!-- new section  -->
       <div class="mb-10">
-        <h2 class=" text-[40px] text-center font-extrabold mb-10">TAKE THE PLEDGE.</h2>
+        <h2 class="text-[40px] text-center font-extrabold mb-10">
+          TAKE THE PLEDGE.
+        </h2>
         <div class="flex justify-center mb-5">
           <p class="text-center font-medium text-[14px] text-black px-20">
-            Support and empower women experiencing domestic violence, every day of the year.
+            Support and empower women experiencing domestic violence, every day
+            of the year.
           </p>
         </div>
-        <div class="text-center flex flex-col items-center justify-center ">
+        <div class="text-center flex flex-col items-center justify-center">
           <span class="cursor-pointer peer mb-3">LEARN MORE TODAY.</span>
-          <span class="peer-hover:block  bg-black w-40 h-[.5px]"></span>
+          <span class="peer-hover:block bg-black w-40 h-[.5px]"></span>
         </div>
       </div>
 
       <!-- horizontal line and words  -->
-      <div class="m-auto flex justify-between divide-solid border-b w-[98%] text-[12px] font-medium">
+      <div
+        class="m-auto flex justify-between divide-solid border-b w-[98%] text-[12px] font-medium"
+      >
         <p>BUY GOOD</p>
         <p>DO GOOD</p>
       </div>
@@ -74,49 +123,120 @@
       <div class="grid lg:grid-cols-3 gap-5 px-3.5 py-5 mb-13">
         <!-- card-1 -->
         <div class="relative overflow-hidden flex justify-center items-center">
-          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-1.avif" alt="">
-          <div data-scroll data-scroll-speed="-3" class=" absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full">
-            <img width="10" src="public/circle.svg" alt="">
-            <h3 class="font-medium text-[14px]">SHOP</h3>
-            <h3 class="font-bold text-[14px]">PANTRY</h3>
-            <img width="15" src="public/angle-small-right.svg" alt="">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+            src="public/card-image-1.avif"
+            alt=""
+          />
+          <div class="flex items-center justify-center">
+            <div
+              data-scroll
+              data-scroll-speed="-3"
+              class="peer border z-[2] left-0 absolute flex bg-[#DCC0B4] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full"
+            >
+              <img width="10" src="public/circle.svg" alt="" />
+              <h3 class="font-medium text-[14px]">SHOP</h3>
+              <h3 class="font-bold text-[14px]">PANTRY</h3>
+              <img width="15" src="public/angle-small-right.svg" alt="" />
+            </div>
+            <div
+              class="bg-[#DCC0B4] absolute left-0 w-[89%] top-[50%] peer-hover:visible peer-hover:h-[250px] transition-all duration-500 h-0 grid grid-cols-2"
+            >
+              <div class="h-[100%] relative">
+                <img
+                  class="absolute object-contain w-full h-[80%] border"
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/23480d8e50c66a44e33ec4e88418f961579cc72e-5000x5000.png/67.png?w=1024&h=1024&auto=format"
+                  alt=""
+                />
+                <div class="">
+                  <p class="inline">BEYOND THE ROCKEY ROAD MEGA BLOCK</p>
+                </div>
+              </div>
+              <div class="h-[100%] relative">
+                <img
+                  class="absolute object-contain w-full h-[80%] border"
+                  src="https://cdn.sanity.io/images/w8f1ak3c/production/ff380ebfee344ff98d24d4156ded6b9dc22a2a2a-5000x5000.png/Change-The-Course-Cookbook-Two-Good-Co.png?w=1024&h=1024&auto=format"
+                  alt=""
+                />
+                <p class="inline">BEYOND THE ROCKEY ROAD MEGA BLOCK</p>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- card-2 -->
         <div class="relative overflow-hidden flex justify-center items-center">
-          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-2.avif" alt="">
-          <div data-scroll data-scroll-speed="-3" class="absolute flex bg-[#8AAAD6] gap-10 px-10 lg:px-7  py-3.5 cursor-pointer rounded-full">
-            <img width="10" src="public/circle.svg" alt="">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+            src="public/card-image-2.avif"
+            alt=""
+          />
+          <div
+            data-scroll
+            data-scroll-speed="-3"
+            class="absolute flex bg-[#8AAAD6] gap-10 px-10 lg:px-7 py-3.5 cursor-pointer rounded-full"
+          >
+            <img width="10" src="public/circle.svg" alt="" />
             <h3 class="font-medium text-[14px]">SHOP</h3>
             <h3 class="font-bold text-[14px]">ALEMAIS</h3>
-            <img width="15" src="public/angle-small-right.svg" alt="">
+            <img width="15" src="public/angle-small-right.svg" alt="" />
           </div>
         </div>
 
         <!-- card-3 -->
         <div class="relative overflow-hidden flex justify-center items-center">
-          <img data-scroll data-scroll-speed="1" class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]" src="public/card-image-3.avif" alt="">
-          <div data-scroll data-scroll-speed="-3"  class="absolute flex bg-[#FFFFFF] gap-5 px-8 lg:px-7  py-3.5 cursor-pointer rounded-full">
-            <img width="10" src="public/circle.svg" alt="">
+          <img
+            data-scroll
+            data-scroll-speed="1"
+            class="w-full h-full scale-[1.2] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+            src="public/card-image-3.avif"
+            alt=""
+          />
+          <div
+            data-scroll
+            data-scroll-speed="-3"
+            class="absolute flex bg-[#FFFFFF] gap-5 px-8 lg:px-7 py-3.5 cursor-pointer rounded-full"
+          >
+            <img width="10" src="public/circle.svg" alt="" />
             <h3 class="font-medium text-[14px]">SHOP</h3>
             <h3 class="font-bold text-[14px]">SOAPS FOR HOPE</h3>
-            <img width="15" src="public/angle-small-right.svg" alt="">
+            <img width="15" src="public/angle-small-right.svg" alt="" />
           </div>
         </div>
       </div>
 
       <!-- next text section  -->
-      <div  class="lg:flex justify-between p-6 mb-30">
-        <h2 class="px-6 text-[32px] text-center mb-10 leading-8 font-[900] uppercase lg:text-[56px] lg:px-0 lg:text-left lg:leading-14">We believe in people, until they believe in themselves again.</h2>
+      <div class="lg:flex justify-between p-6 mb-30">
+        <h2
+          class="px-6 text-[32px] text-center mb-10 leading-8 font-[900] uppercase lg:text-[56px] lg:px-0 lg:text-left lg:leading-14"
+        >
+          We believe in people, until they believe in themselves again.
+        </h2>
         <div>
-          <p class="text-center text-base font-medium mb-10 px-5 lg:text-left lg:px-30">Everything we do is designed to rebuild self worth and independence, in order to break free from the cycle of disadvantage.
+          <p
+            class="text-center text-base font-medium mb-10 px-5 lg:text-left lg:px-30"
+          >
+            Everything we do is designed to rebuild self worth and independence,
+            in order to break free from the cycle of disadvantage.
           </p>
-          <p class="text-center text-base font-medium px-3.5 leading-[1.5] mb-10 lg:text-left lg:px-31">With every purchase you make with us, you're helping to change the course of someone's life; you're walking alongside vulnerable women as they find their way home again.
+          <p
+            class="text-center text-base font-medium px-3.5 leading-[1.5] mb-10 lg:text-left lg:px-31"
+          >
+            With every purchase you make with us, you're helping to change the
+            course of someone's life; you're walking alongside vulnerable women
+            as they find their way home again.
           </p>
-          <div class="text-center flex flex-col items-center justify-center lg:items-start lg:px-31">
-            <span class="cursor-pointer peer mb-1 text-[12px] font-medium ">SHOP TO SUPPORT.</span>
-            <span class="peer-hover:block  bg-black w-30 h-[.5px]"></span>
+          <div
+            class="text-center flex flex-col items-center justify-center lg:items-start lg:px-31"
+          >
+            <span class="cursor-pointer peer mb-1 text-[12px] font-medium"
+              >SHOP TO SUPPORT.</span
+            >
+            <span class="peer-hover:block bg-black w-30 h-[.5px]"></span>
           </div>
         </div>
       </div>
@@ -125,73 +245,144 @@
       <!-- all product cards  -->
       <div class="flex justify-evenly p-6">
         <div class="">
-          <div id="product-card-1" class="cursor-pointer max-w-[612px] lg:mb-20">
-            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-1.avif" alt="">
-            <p class="text-center text-[0.75rem] font-medium">TWO HUGS BAR N' BEAR SET</p>
+          <div
+            id="product-card-1"
+            class="cursor-pointer max-w-[612px] lg:mb-20"
+          >
+            <img
+              class="w-full h-full object-contain lg:mb-10"
+              src="public/product-image-1.avif"
+              alt=""
+            />
+            <p class="text-center text-[0.75rem] font-medium">
+              TWO HUGS BAR N' BEAR SET
+            </p>
             <span class="block text-center text-[0.625rem]">$50</span>
           </div>
           <div id="product-card-4" class="cursor-pointer max-w-[612px]">
-            <img  class="w-full h-full object-contain lg:mb-10" src="public/product-image-3.avif" alt="">
-            <p class="text-center text-[0.75rem] font-medium">CHANGE THE COURSE COOKBOOK</p>
+            <img
+              class="w-full h-full object-contain lg:mb-10"
+              src="public/product-image-3.avif"
+              alt=""
+            />
+            <p class="text-center text-[0.75rem] font-medium">
+              CHANGE THE COURSE COOKBOOK
+            </p>
             <span class="block text-center text-[0.625rem]">$45</span>
           </div>
         </div>
 
-
         <div>
-          <div id="product-card-2" class="cursor-pointer max-w-[612px] lg:mb-20">
-            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-2.avif" alt="">
-            <p class="text-center text-[0.75rem] font-medium">ALEMAIS COOK IN COLOUR APRON</p>
+          <div
+            id="product-card-2"
+            class="cursor-pointer max-w-[612px] lg:mb-20"
+          >
+            <img
+              class="w-full h-full object-contain lg:mb-10"
+              src="public/product-image-2.avif"
+              alt=""
+            />
+            <p class="text-center text-[0.75rem] font-medium">
+              ALEMAIS COOK IN COLOUR APRON
+            </p>
             <span class="block text-center text-[0.625rem]">$190</span>
           </div>
           <div id="product-card-3" class="cursor-pointer max-w-[612px]">
-            <img class="w-full h-full object-contain lg:mb-10" src="public/product-image-4.avif" alt="">
-            <p class="text-center text-[0.75rem] font-medium">Strawberry Gum Leaf, Coriander, Basil + Mint Candle</p>
+            <img
+              class="w-full h-full object-contain lg:mb-10"
+              src="public/product-image-4.avif"
+              alt=""
+            />
+            <p class="text-center text-[0.75rem] font-medium">
+              Strawberry Gum Leaf, Coriander, Basil + Mint Candle
+            </p>
             <span class="block text-center text-[0.625rem]">$59</span>
           </div>
         </div>
       </div>
 
-      
-        <!-- slider js section  -->
+      <!-- slider js section  -->
       <!-- <div class="h-screen bg-blue-700 text-white">slider js section</div> -->
 
       <!-- our impact section  -->
-       <div class="lg:flex lg:flex-row-reverse lg:justify-start">
+      <div class="lg:flex lg:flex-row-reverse lg:justify-start">
         <div class="lg:w-[70%] grid grid-cols-2 mx-2 mb-2.5 overflow-hidden">
           <div class="flex justify-center h-[500px] lg:h-full">
-            <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Christina-Maria-Jes-Lindsay-9143.avif" alt="">
+            <img
+              data-scroll
+              data-scroll-speed="-1"
+              class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]"
+              src="public/Christina-Maria-Jes-Lindsay-9143.avif"
+              alt=""
+            />
           </div>
           <div class="flex justify-center h-[500px] lg:h-full">
-            <img data-scroll data-scroll-speed="-1" class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]" src="public/Patricia-Work-Work-Good-Stories-Two-Good-Co.avif" alt="">
+            <img
+              data-scroll
+              data-scroll-speed="-1"
+              class="object-cover w-[83%] sm:w-[85%] md:w-[86%] h-full scale-[1.1]"
+              src="public/Patricia-Work-Work-Good-Stories-Two-Good-Co.avif"
+              alt=""
+            />
           </div>
         </div>
         <div class="lg:w-[30%] pr-20">
-          <h2 class="text-2xl leading-0.9 font-extrabold mx-4 mb-4">OUR IMPACT.</h2>
+          <h2 class="text-2xl leading-0.9 font-extrabold mx-4 mb-4">
+            OUR IMPACT.
+          </h2>
           <p class="mb-8 mx-4">The thing is, we don't save anyone.</p>
-          <p class="mb-8 mx-4">What we do is provide a safe space for women to change the course of their own lives.</p>
-          <p class="mb-8 mx-4">After many years of living in crisis, abuse and complex trauma, restoring self-worth is foundational for independence. We believe that through experiences that promote love and respect, we can spark and nurture a sense of self-worth for those on the path of healing.</p>
+          <p class="mb-8 mx-4">
+            What we do is provide a safe space for women to change the course of
+            their own lives.
+          </p>
+          <p class="mb-8 mx-4">
+            After many years of living in crisis, abuse and complex trauma,
+            restoring self-worth is foundational for independence. We believe
+            that through experiences that promote love and respect, we can spark
+            and nurture a sense of self-worth for those on the path of healing.
+          </p>
           <div>
             <p class="px-4">HERE'S HOW WE DO IT</p>
           </div>
         </div>
-       </div>
+      </div>
 
-       <!-- input box  -->
-        <div class="mx-4 mb-50 relative h-1000">
-          <input id="input-box" class="border-b-[1px] outline-none w-full placeholder-black text-[40px] font-extrabold	focus:placeholder-[#F7F7F7]" type="text" placeholder="ENTER YOUR EMAIL ADDRESS FOR GOOD">
-          <img id="default-btn" class="absolute w-10 top-0 end-0" src="public/right-arrow.png" alt="">
-          <img id="focus-btn" class="hidden absolute w-10 top-0 end-0" src="public/up-and-down-arrows.png" alt="">
-        </div>
+      <!-- input box  -->
+      <div class="mx-4 mb-50 relative">
+        <input
+          id="input-box"
+          class="border-b-[1px] outline-none w-full placeholder-black text-[40px] font-extrabold focus:placeholder-[#F7F7F7]"
+          type="text"
+          placeholder="ENTER YOUR EMAIL ADDRESS FOR GOOD"
+        />
+        <img
+          id="default-btn"
+          class="absolute w-10 top-0 end-0"
+          src="public/right-arrow.png"
+          alt=""
+        />
+        <img
+          id="focus-btn"
+          class="hidden absolute w-10 top-0 end-0"
+          src="public/up-and-down-arrows.png"
+          alt=""
+        />
+      </div>
     </main>
 
-    <footer>
+    <footer class="h-1000">
       <div class="mx-4 mb-10 lg:hidden">
-        <img class="w-20 h-20" src="public/twogoodlogo-dark-300x300.svg" alt="">
+        <img
+          class="w-20 h-20"
+          src="public/twogoodlogo-dark-300x300.svg"
+          alt=""
+        />
       </div>
       <div class="grid grid-cols-2 lg:flex lg:justify-between mx-4 mb-10">
         <div class="lg:w-[25%]">
-          <span class="block mb-10 text-[10px] opacity-[0.5]">CONNECT WITH US</span>
+          <span class="block mb-10 text-[10px] opacity-[0.5]"
+            >CONNECT WITH US</span
+          >
           <ul>
             <li>Facbook</li>
             <li>Instagram</li>
@@ -201,15 +392,21 @@
           </ul>
         </div>
         <div class="hidden mb-10 lg:flex flex-col items-center lg:w-[50%]">
-          <img class="w-55 h-55 mb-25" src="public/twogoodlogo-dark-300x300.svg" alt="">
+          <img
+            class="w-55 h-55 mb-25"
+            src="public/twogoodlogo-dark-300x300.svg"
+            alt=""
+          />
           <ul class="flex justify-evenly w-full">
             <li class="text-[12px] opacity-[0.5]">© TWO GOOD CO. 2025</li>
             <li class="text-[12px] opacity-[0.5]">TERMS OF USE</li>
             <li class="text-[12px] opacity-[0.5]">PRIVACY POLICY</li>
-          </ul>        
+          </ul>
         </div>
         <div class="lg:w-[25%]">
-          <span class="block mb-10 text-[10px] opacity-[0.5] lg:text-right">THE NITTY GRITIES</span>
+          <span class="block mb-10 text-[10px] opacity-[0.5] lg:text-right"
+            >THE NITTY GRITIES</span
+          >
           <ul class="lg:text-right">
             <li>Good Things FAQs</li>
             <li>Good Food FAQs</li>
@@ -221,15 +418,23 @@
           </ul>
         </div>
       </div>
-      <span class="block uppercase mx-4 mb-10 text-[10px] opacity-[0.5] lg:hidden">acknowledgement of country</span>
-      <p class="mb-10 mx-4 text-[14px] leading-5 lg:text-center lg:px-45 lg:pt-[10px] lg:pb-[60px]">
-        We are proud and privileged to have our home on this land, and to be able to continue the long tradition of community coming together around food, begun thousands of years ago by First Nations peoples.
-
-        As we stand together on this unceded land, we acknowledge our First Nations people, are the original custodians of this land, and we recognise their deep connection to land, water, sky and community which continues today. 
-        
-        We pay our deep respects to community elders, past, present and emerging, for they hold the memories, the traditions, the culture and hopes of Aboriginal and Torres Strait Islander peoples.
-        
-        Always was, always will be Aboriginal land. 
+      <span
+        class="block uppercase mx-4 mb-10 text-[10px] opacity-[0.5] lg:hidden"
+        >acknowledgement of country</span
+      >
+      <p
+        class="mb-10 mx-4 text-[14px] leading-5 lg:text-center lg:px-45 lg:pt-[10px] lg:pb-[60px]"
+      >
+        We are proud and privileged to have our home on this land, and to be
+        able to continue the long tradition of community coming together around
+        food, begun thousands of years ago by First Nations peoples. As we stand
+        together on this unceded land, we acknowledge our First Nations people,
+        are the original custodians of this land, and we recognise their deep
+        connection to land, water, sky and community which continues today. We
+        pay our deep respects to community elders, past, present and emerging,
+        for they hold the memories, the traditions, the culture and hopes of
+        Aboriginal and Torres Strait Islander peoples. Always was, always will
+        be Aboriginal land.
       </p>
       <ul class="flex justify-between w-full px-4 py-4 lg:hidden">
         <li class="text-[12px] opacity-[0.5]">© TWO GOOD CO. 2025</li>
@@ -240,6 +445,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!-- <script>
+      // use a script tag or an external JS file
+      document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".scroll-box", {
+          scrollTrigger: {
+            trigger: ".scroll-box",
+            scroller: "body",
+            start: "top center",
+            end: "bottom center",
+            markers: true, // this shows green/red start and end
+            // scrub: true,
+          },
+          rotate: "360deg",
+          duration: 3,
+        });
+      });
+    </script> -->
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
