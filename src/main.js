@@ -48,6 +48,20 @@ gsap.to(".image-block", {
     }
 })
 
+gsap.to("#nav-ul", {
+    translateY: "-100%",
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".body-container", 
+        // markers: true,
+        scroller: "#main",
+        start: "top 0",
+        end: "top -5%",
+        scrub: true,
+    }
+})
+
 
 gsap.from("h1", {
     y: 500,
