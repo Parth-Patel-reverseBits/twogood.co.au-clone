@@ -164,57 +164,107 @@ inputBox.addEventListener("blur", () => {
 });
 
 // swiper-js container
-let swiperWrapperContainer = document.querySelector(".swiper-wrapper");
-let text = "";
-for (let i = 1; i <= 25; i++) {
-  text += `
+const swiperWrapperContainer = document.querySelector(".swiper-wrapper");
+let html = "";
+
+// Generate 25 slides dynamically
+for (let i = 0; i < 25; i++) {
+  html += `
     <div class="swiper-slide bg-[#F7F7F7]">
       <div class="flex justify-center flex-col items-center bg-[#F7F7F7]">
-        <div>
-          <div class="bg-black w-4 h-4 rounded-full black-dots"></div>
-          <div class="text-left font-medium text-2xl mt-6 texts cursor-pointer" for="${i}">
-            m// ${i} <br />
+        <div class="">
+          <div class="w-4 h-4 rounded-full black-dots" data-index="${i}"></div>
+          <div class="text-left font-medium text-2xl mt-6 texts cursor-pointer" data-index="${i}">
+            m// ${i + 1} <br />
             Chrissy Nolan
           </div>
+          <img 
+            src="https://twogood.com.au/quote-animation.svg"
+            class="quote-img"
+            data-index="${i}"
+            style="
+              display: block;
+              transform: scaleX(0);
+              transform-origin: center;
+              transition: transform 0.5s ease-in-out;
+              margin: 0 auto;
+            "
+          />
         </div>
       </div>
     </div>
   `;
 }
-swiperWrapperContainer.innerHTML = text;
 
-// Style dots: first is black, rest are white
-document.querySelectorAll(".black-dots").forEach((item, index) => {
-  item.style.backgroundColor = index === 0 ? "black" : "white";
-  item.style.border = "2px solid black";
-});
+swiperWrapperContainer.innerHTML = html;
 
-// Apply conditional hover effect to .texts
-document.querySelectorAll(".texts").forEach((textEl) => {
-  const dot = textEl.previousElementSibling;
-  if (dot && dot.classList.contains("black-dots")) {
-    const bgColor = dot.style.backgroundColor;
-    if (bgColor === "white") {
-      textEl.classList.add("hover:opacity-[0.5]");
-    }
-  }
+// Select all dynamic elements
+const dots = document.querySelectorAll(".black-dots");
+const texts = document.querySelectorAll(".texts");
+const images = document.querySelectorAll(".quote-img");
 
-  // Add click behavior
-  textEl.addEventListener("click", () => {
-    // Reset all dots and remove hover class
-    document.querySelectorAll(".black-dots").forEach((dot, i) => {
-      dot.style.backgroundColor = "white";
-    });
+// Track rotation state per image and current active index
+let currentIndex = 0;
+const rotationStates = new Array(25).fill(false);
 
-    document.querySelectorAll(".texts").forEach((t) => {
-      t.classList.add("hover:opacity-[0.5]");
-    });
+// Handle activation of a specific slide
+function activateSlide(index) {
+  // Reset all dots
+  dots.forEach((dot) => {
+    dot.style.backgroundColor = "white";
+    dot.style.border = "2px solid black";
+  });
 
-    // Set clicked one
-    const currentDot = textEl.previousElementSibling;
-    if (currentDot && currentDot.classList.contains("black-dots")) {
-      currentDot.style.backgroundColor = "black";
-      textEl.classList.remove("hover:opacity-[0.5]");
+  // Reset all texts
+  texts.forEach((text) => {
+    text.classList.add("hover:opacity-[0.5]");
+  });
+
+  // Reset all images except the current one
+  images.forEach((img, i) => {
+    if (i !== index) {
+      img.style.transition = "transform 0.5s ease-in-out";
+      img.style.transformOrigin = "center";
+      img.style.transform = "scaleX(0)";
+      img.style.display = "block";
+      img.style.margin = "0 auto";
     }
   });
+
+  // Activate dot for the selected slide
+  const activeDot = dots[index];
+  activeDot.style.backgroundColor = "black";
+
+  // Activate text
+  const activeText = texts[index];
+  activeText.classList.remove("hover:opacity-[0.5]");
+
+  // Handle image animation
+  const img = images[index];
+  img.style.display = "block";
+  img.style.margin = "0 auto";
+  img.style.transition = "transform 0.5s ease-in-out";
+  img.style.transformOrigin = "center"; // << THIS is the key
+
+  if (currentIndex === index) {
+    // Toggle rotation on repeated click of the same text
+    rotationStates[index] = !rotationStates[index];
+  } else {
+    // Reset rotation if clicking a different one
+    rotationStates[index] = false;
+  }
+
+  img.style.transform = rotationStates[index]
+    ? "rotate(180deg) scaleX(1)"
+    : "scaleX(1)";
+
+  currentIndex = index;
+}
+
+// Initial setup
+activateSlide(0);
+
+// Add click listeners
+texts.forEach((text, index) => {
+  text.addEventListener("click", () => activateSlide(index));
 });
