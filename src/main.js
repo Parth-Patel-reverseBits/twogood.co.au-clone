@@ -41,9 +41,25 @@ function scrollTrigger() {
 }
 
 scrollTrigger();
+
+gsap.to("#company-text", {
+  translateY: "-100%",
+  duration: 1,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".body-container",
+    // markers: true,
+    scroller: "#main",
+    start: "top 0",
+    end: "top -5%",
+    scrub: true,
+  },
+});
+
 gsap.to(".image-block", {
   translateY: "-100%",
   duration: 1,
+  opacity: 1,
   scrollTrigger: {
     trigger: ".body-container",
     // markers: true,
