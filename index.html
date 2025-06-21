@@ -77,16 +77,6 @@
           >
             TWO<br />GOOD<br />CO.
           </h2>
-          <div class="image-block mt-[1px]">
-            <img
-              width="62"
-              height="63"
-              id="logo-img"
-              class="header-svg w-15 block"
-              src="https://sydneylawgroup.com.au/wp-content/uploads/2021/03/twogoodlogo-dark-300x300.png"
-              alt=""
-            />
-          </div>
         </div>
         <div class="flex items-center">
           <ul
@@ -101,19 +91,48 @@
         </div>
         <div
           id="remove-nav-model"
-          class="cursor-pointer flex gap-10 mr-6 fixed end-0 bg-white z-[500] py-2 px-4 rounded-full"
+          class="cursor-pointer flex gap-10 mr-6 fixed end-0 py-2 px-4 rounded-full"
         >
-          <img width="16" src="public/bars-staggered.svg" alt="" srcset="" />
-          <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <svg
+            class="shopping-cart-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <g id="_01_align_center" data-name="01 align center">
+              <path
+                d="M24,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H0V2H1.222a1,1,0,0,1,.993.883L3.8,16.351A3,3,0,0,0,6.778,19H20V17H6.778a1,1,0,0,1-.993-.884L5.654,15H21.836ZM20.164,13H5.419L4.478,5H21.607Z"
+              ></path>
+              <circle cx="7" cy="22" r="2"></circle>
+              <circle cx="17" cy="22" r="2"></circle>
+            </g>
+          </svg>
         </div>
       </nav>
 
+      <!-- section 1  -->
       <div
-        class="texts-container text-white absolute end-5 bottom-10 text-[60px] font-bold text-end leading-14"
+        class="texts-container text-white absolute end-5 bottom-40 text-[60px] font-bold text-end leading-14"
       >
         <div
           id="text-anime-gsap"
-          class="box-border overflow-hidden h-[60px] pt-15 opacity-0"
+          class="box-border overflow-hidden h-[60px] pt-15"
         >
           SHOP
         </div>
@@ -124,7 +143,38 @@
         <div>ABOUT</div>
         <div>CONTACT</div>
         <div>DONATE</div>
-        <div>SIGN IN</div>
+      </div>
+      <div
+        class="model-footer w-full text-white grid grid-cols-3 absolute bottom-10 px-10"
+      >
+        <!-- section 4 -->
+        <div class="footer-col-4">
+          <h3 class="text-sm font-semibold mb-4">CONNECT WITH US</h3>
+          <ul class="text-sm">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>LinkedIn</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+        <!-- section 3  -->
+        <div class="footer-col-3">
+          <h3 class="text-sm font-semibold mb-4">NITTY GRITTIES</h3>
+          <ul class="text-sm">
+            <li>Good Things FAQs</li>
+            <li>Good Food FAQs</li>
+            <li>Good Places</li>
+          </ul>
+        </div>
+        <!-- section 2  -->
+        <div class="footer-col-2">
+          <h3 class="text-sm font-semibold mb-4">GET STARTED</h3>
+          <ul class="text-sm">
+            <li>Pathways</li>
+            <li>Careers</li>
+          </ul>
+        </div>
       </div>
     </div>
 

@@ -328,6 +328,11 @@ navBarBtn.addEventListener("click", () => {
   document.getElementById("model-section").classList.remove("scale-y-0");
   document.getElementById("model-section").classList.add("scale-y-100");
   myTextAnimationModel();
+
+  // Add a small delay to ensure the model is visible before animating
+  setTimeout(() => {
+    runModelOpenAnimation();
+  }, 300);
 });
 
 let removeNavBarBtn = document.getElementById("remove-nav-model");
@@ -826,4 +831,57 @@ function myTextAnimationModel() {
 
 function ModelInsideTextAnimation() {
   gsap.to("#text-anime-gsap", { opacity: 0 }, { duration: 5 });
+}
+
+// Animate navigation text elements in model section
+function runModelOpenAnimation() {
+  // Reset states before animating
+  gsap.set(".texts-container div", {
+    opacity: 0,
+    y: 30,
+    scale: 0.9,
+  });
+  gsap.set(".model-footer h3, .model-footer li", {
+    opacity: 0,
+    x: 20,
+  });
+
+  const tl = gsap.timeline();
+
+  // Section 1: Main Nav
+  tl.to(".texts-container div", {
+    duration: 0.6,
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    stagger: 0.08,
+    ease: "power2.out",
+  });
+
+  // Section 2: GET STARTED
+  tl.to(".footer-col-2 h3, .footer-col-2 li", {
+    duration: 0.4,
+    opacity: 1,
+    x: 0,
+    stagger: 0.08,
+    ease: "power2.out",
+  });
+
+  // Section 3: NITTY GRITTIES
+  tl.to(".footer-col-3 h3, .footer-col-3 li", {
+    duration: 0.4,
+    opacity: 1,
+    x: 0,
+    stagger: 0.08,
+    ease: "power2.out",
+  });
+
+  // Section 4: CONNECT WITH US
+  tl.to(".footer-col-4 h3, .footer-col-4 li", {
+    duration: 0.4,
+    opacity: 1,
+    x: 0,
+    stagger: 0.08,
+    ease: "power2.out",
+  });
 }

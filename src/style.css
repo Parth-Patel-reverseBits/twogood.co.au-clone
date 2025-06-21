@@ -59,6 +59,12 @@ h2 {
   position: relative;
 }
 
+/* Hide navigation text elements initially */
+.texts-container div {
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -257,4 +263,23 @@ button:focus-visible {
   /* border: 2px solid blue; */
   overflow: hidden;
   transform: translateY(100px);
+}
+
+.feather-x {
+  color: white;
+}
+
+#remove-nav-model {
+  background-color: transparent;
+}
+
+/* Hide footer elements initially */
+.model-footer h3,
+.model-footer li {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.shopping-cart-icon {
+  fill: white;
 }
