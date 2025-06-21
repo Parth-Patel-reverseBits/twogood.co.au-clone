@@ -53,13 +53,80 @@
           </ul>
         </div>
         <div
-          class="flex gap-10 mr-6 fixed end-0 bg-white z-100 py-2 px-4 rounded-full"
+          id="nav-model"
+          class="cursor-pointer flex gap-10 mr-6 fixed end-0 bg-white z-[500] py-2 px-4 rounded-full"
         >
           <img width="16" src="public/bars-staggered.svg" alt="" srcset="" />
           <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="" />
         </div>
       </nav>
     </header>
+
+    <!-- onClick Navigation model section  -->
+    <div
+      id="model-section"
+      class="fixed bg-black transition duration-300 scale-y-0"
+    >
+      <nav
+        class="w-full fixed flex justify-between ml-4 items-center text-white"
+      >
+        <div class="p-1 h-[89px] overflow-hidden mt-5">
+          <h2
+            id="company-text"
+            class="text-3xl/7 font-extrabold tracking-tighter"
+          >
+            TWO<br />GOOD<br />CO.
+          </h2>
+          <div class="image-block mt-[1px]">
+            <img
+              width="62"
+              height="63"
+              id="logo-img"
+              class="header-svg w-15 block"
+              src="https://sydneylawgroup.com.au/wp-content/uploads/2021/03/twogoodlogo-dark-300x300.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <ul
+            id="nav-ul"
+            class="hidden lg:flex justify-end items-center gap-9 pe-38"
+          >
+            <li>SHOP</li>
+            <li>WHOLESALE</li>
+            <li>CATERING</li>
+            <li>DONATE</li>
+          </ul>
+        </div>
+        <div
+          id="remove-nav-model"
+          class="cursor-pointer flex gap-10 mr-6 fixed end-0 bg-white z-[500] py-2 px-4 rounded-full"
+        >
+          <img width="16" src="public/bars-staggered.svg" alt="" srcset="" />
+          <img width="16" src="public/shopping-cart (2).svg" alt="" srcset="" />
+        </div>
+      </nav>
+
+      <div
+        class="texts-container text-white absolute end-5 bottom-10 text-[60px] font-bold text-end leading-14"
+      >
+        <div
+          id="text-anime-gsap"
+          class="box-border overflow-hidden h-[60px] pt-15 opacity-0"
+        >
+          SHOP
+        </div>
+        <div>WHOLESALE</div>
+        <div>CATERING</div>
+        <div>IMPACT</div>
+        <div>STORIES</div>
+        <div>ABOUT</div>
+        <div>CONTACT</div>
+        <div>DONATE</div>
+        <div>SIGN IN</div>
+      </div>
+    </div>
 
     <main id="main">
       <!-- header section  -->
@@ -369,26 +436,7 @@
       </div>
 
       <!-- swiper-js content text-animation container  -->
-      <div>
-        <h2
-          class="text-center text-[72px] leading-20 font-extrabold uppercase font-[Futura Now Headline]"
-        >
-          Best Shampoo + Conditioner <br />
-          - very happy!
-        </h2>
-        <h2
-          class="text-center text-[72px] leading-20 font-extrabold uppercase font-[Futura Now Headline]"
-        >
-          Thank you so much for the beautiful catering; it means a lot working
-          with a company such as Two Good Co.
-        </h2>
-        <h2
-          class="text-center text-[72px] leading-20 font-extrabold uppercase font-[Futura Now Headline]"
-        >
-          The hampers we ordered were lovely and the team are wonderful to
-          liaise with.
-        </h2>
-      </div>
+      <div class="text-animation-container mb-20"></div>
 
       <!-- our impact section  -->
       <div class="lg:flex lg:flex-row-reverse lg:justify-start">
